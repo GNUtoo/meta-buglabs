@@ -11,7 +11,7 @@ LIC_FILES_CHKSUM = "file://lgpl.txt;md5=0a6bd609a83bac83314921489173b1d3"
 
 inherit bug-java-library
 
-PACKAGES = ${PN}
+PACKAGES = "${PN}"
 S = "${WORKDIR}/${PN}"
 # INHIBIT_PACKAGE_STRIP=1
 PR="r0"
