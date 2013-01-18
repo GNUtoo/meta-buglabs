@@ -16,7 +16,7 @@ SRC_URI = "file://att \
 	file://COPYING \
 	"
 
-S = ${WORKDIR}
+S = "${WORKDIR}"
 
 PACKAGE_ARCH = "all"
 
