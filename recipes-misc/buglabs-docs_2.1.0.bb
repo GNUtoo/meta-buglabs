@@ -9,7 +9,7 @@ SRC_URI = "file://BUG_Guide.pdf \
 
 FILES_${PN} += "/home/root/*"
 
-S = ${WORKDIR}
+S = "${WORKDIR}"
 
 PACKAGE_ARCH = "all"
 
