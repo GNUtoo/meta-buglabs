@@ -34,8 +34,8 @@ do_install() {
 RDEPENDS_${PN} = "e-wm gnome-icon-theme"
 
 python populate_packages_prepend () {
-	angstrom_e_dir = bb.data.expand('${datadir}/enlightenment/data/config', d)
-	do_split_packages(d, angstrom_e_dir, '(.*)', 'e-wm-config-%s', 'E17 window manager %s config', extra_depends='e-wm gnome-icon-theme', allow_links=True, allow_dirs=True)
+    angstrom_e_dir = bb.data.expand('${datadir}/enlightenment/data/config', d)
+    do_split_packages(d, angstrom_e_dir, '(.*)', 'e-wm-config-%s', 'E17 window manager %s config', extra_depends='e-wm gnome-icon-theme', allow_links=True, allow_dirs=True)
 }
 
 PACKAGE_ARCH = "all"
